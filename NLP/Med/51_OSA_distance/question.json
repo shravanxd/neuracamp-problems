@@ -1,0 +1,9 @@
+{
+    "qid": 51,
+    "title": "Optimal String Alignment Distance",
+    "qtext": "In this problem, you need to implement a function that calculates the Optimal String Alignment (OSA) distance between two given strings. The OSA distance represents the minimum number of edits required to transform one string into another. The allowed edit operations are:\n\n- Insert a character\n- Delete a character\n- Substitute a character\n- Transpose two adjacent characters\n\nEach of these operations costs 1 unit.\n\nYour task is to find the minimum number of edits needed to convert the first string (s1) into the second string (s2).\n\nExample:\nInput:\nsource = \"butterfly\"\ntarget = \"dragonfly\"\n\ndistance = OSA(source, target)\nprint(distance)\n\nOutput:\n6\n\nReasoning:\nThe OSA distance between the strings \"butterfly\" and \"dragonfly\" is 6. The minimum number of edits required to transform the source string into the target string is 6.",
+    "inputFormat": "source = \"butterfly\", target = \"dragonfly\"",
+    "outputFormat": "6",
+    "reason": "The OSA distance between the strings \"butterfly\" and \"dragonfly\" is 6. The minimum number of edits required to transform the source string into the target string is 6.",
+    "learnAbout": "Optimal String Alignment Distance\n\nGiven two strings (s_1) and (s_2), find the Optimal String Alignment (OSA) distance between them.\n\nThe OSA distance gives the minimum number of edits needed to transform string (s_1) into (s_2). Here are the allowed edit operations:\n\n- Insert a character\n- Delete a character\n- Substitute a character\n- Transpose two adjacent characters\n\nEach operation has a cost of 1 unit.\n\nFor example, the OSA distance between the strings \"caper\" and \"acer\" is 2:\n- One deletion (removing the letter 'p')\n- One transposition (swapping the letters 'a' and 'c')"
+  }  

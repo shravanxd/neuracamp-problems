@@ -1,0 +1,10 @@
+{
+    "qid": 22,
+    "title": "Sigmoid Activation Function Understanding",
+    "qtext": "Write a Python function that computes the output of the sigmoid activation function given an input value z. The function should return the output rounded to four decimal places.\n\nExample:\nInput:\nz = 0\n\nOutput:\n0.5\n\nReasoning:\nThe sigmoid function is defined as σ(z) = 1 / (1 + exp(-z)). For z = 0, exp(-0) = 1, hence the output is 1 / (1 + 1) = 0.5.",
+    "inputFormat": "z = 0",
+    "outputFormat": "0.5",
+    "reason": "The sigmoid function is defined as σ(z) = 1 / (1 + exp(-z)). For z = 0, exp(-0) = 1, hence the output is 1 / (1 + 1) = 0.5.",
+    "learnAbout": "Understanding the Sigmoid Activation Function\n\nThe sigmoid activation function is crucial in neural networks, especially for binary classification tasks. It maps any real-valued number into the interval \\( (0, 1) \\), making it useful for modeling probability as an output.\n\n**Mathematical Definition**\n\nThe sigmoid function is mathematically defined as:\n\n$$\n\\sigma(z) = \\frac{1}{1 + e^{-z}}\n$$\n\nwhere \\( z \\) is the input to the function.\n\n**Characteristics**\n\n- **Output Range**: The output is always between 0 and 1.\n- **Shape**: The function has an \"S\" shaped curve.\n- **Gradient**: The gradient is highest near \\( z = 0 \\) and decreases as \\( z \\) moves away from 0 in either direction.\n\nThe sigmoid function is particularly useful for turning logits (raw prediction values) into probabilities in binary classification models."
+  }
+  

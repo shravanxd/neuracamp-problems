@@ -1,0 +1,10 @@
+{
+    "qid": 1,
+    "title": "Matrix-Vector Dot Product",
+    "qtext": "Write a Python function that computes the dot product of a matrix and a vector. The function should return a list representing the resulting vector if the operation is valid, or -1 if the matrix and vector dimensions are incompatible. A matrix (a list of lists) can be dotted with a vector (a list) only if the number of columns in the matrix equals the length of the vector. For example, an n x m matrix requires a vector of length m.\n\nExample:\nInput:\na = [[1, 2], [2, 4]], b = [1, 2]\nOutput:\n[5, 10]\nReasoning:\nRow 1: (1 * 1) + (2 * 2) = 1 + 4 = 5; Row 2: (1 * 2) + (2 * 4) = 2 + 8 = 10",
+    "inputFormat": "a = [[1, 2], [2, 4]], b = [1, 2]",
+    "outputFormat": "[5, 10]",
+    "reason": "The function should return a list representing the resulting vector if the operation is valid, or -1 if the matrix and vector dimensions are incompatible.",
+    "learnAbout": "Matrix-Vector Dot Product\n\nConsider a matrix A and a vector v:\n\nMatrix A (n x m):\n\n$$\nA = \\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1m} \\\\\na_{21} & a_{22} & \\cdots & a_{2m} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\na_{n1} & a_{n2} & \\cdots & a_{nm}\n\\end{pmatrix}\n$$\n\nVector v (length m):\n\n$$\nv = \\begin{pmatrix}\nv_1 \\\\\nv_2 \\\\\n\\vdots \\\\\nv_m\n\\end{pmatrix}\n$$\n\nThe dot product A \\cdot v produces a new vector of length n:\n\n$$\nA \\cdot v = \\begin{pmatrix}\na_{11}v_1 + a_{12}v_2 + \\cdots + a_{1m}v_m \\\\\na_{21}v_1 + a_{22}v_2 + \\cdots + a_{2m}v_m \\\\\n\\vdots \\\\\na_{n1}v_1 + a_{n2}v_2 + \\cdots + a_{nm}v_m\n\\end{pmatrix}\n$$\n\nKey Requirement:\nThe number of columns in the matrix (m) must equal the length of the vector (m). If not, the operation is undefined, and the function should return -1."
+  }
+  

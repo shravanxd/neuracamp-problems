@@ -1,0 +1,10 @@
+{
+    "qid": 95,
+    "title": "Calculate the Phi Coefficient",
+    "qtext": "Implement a function to calculate the Phi coefficient, a measure of the correlation between two binary variables. The function should take two lists of integers (0s and 1s) as input and return the Phi coefficient rounded to 4 decimal places.\n\nExample:\nInput:\n```python\nphi_corr([1, 1, 0, 0], [0, 0, 1, 1])\n```\nOutput:\n```python\n-1.0\n```\n\nReasoning:\nThe Phi coefficient measures the correlation between two binary variables. In this example, the variables have a perfect negative correlation, resulting in a Phi coefficient of -1.0.",
+    "inputFormat": "One input:\n- Two lists of integers containing only 0s and 1s.",
+    "outputFormat": "One output:\n- A float representing the Phi coefficient rounded to 4 decimal places.",
+    "reason": "The Phi coefficient helps understand the degree of association between two binary variables. It ranges from -1 (perfect negative correlation) to 1 (perfect positive correlation), with 0 indicating no correlation.",
+    "learnAbout": "The Phi coefficient is a type of correlation coefficient used to measure the association between two binary variables.\n\n**Formula:**\n```math\nϕ = \\frac{(x_{00} \\times x_{11}) - (x_{01} \\times x_{10})}{\\sqrt{(x_{00} + x_{01})(x_{10} + x_{11})(x_{00} + x_{10})(x_{01} + x_{11})}}\n```\n\nWhere:\n- (x_00): Number of (0,0) matches.\n- (x_01): Number of (0,1) matches.\n- (x_10): Number of (1,0) matches.\n- (x_11): Number of (1,1) matches.\n\n**Key Points:**\n- (ϕ = 1): Perfect positive correlation.\n- (ϕ = -1): Perfect negative correlation.\n- (ϕ = 0): No correlation.\n\nThe Phi coefficient is widely used in binary classification evaluation, contingency tables analysis, and feature selection tasks."
+  }
+  
