@@ -1,10 +1,9 @@
 {
     "qid": 22,
     "title": "Sigmoid Activation Function Understanding",
-    "qtext": "Write a Python function that computes the output of the sigmoid activation function given an input value z. The function should return the output rounded to four decimal places.\n\nExample:\nInput:\nz = 0\n\nOutput:\n0.5\n\nReasoning:\nThe sigmoid function is defined as σ(z) = 1 / (1 + exp(-z)). For z = 0, exp(-0) = 1, hence the output is 1 / (1 + 1) = 0.5.",
+    "qtext": "# Sigmoid Activation Function Understanding\n\n## Problem Statement\n\nImplement a Python function that computes the output of the sigmoid activation function for a given input value $z$. The function should return the output rounded to four decimal places.\n\nThe sigmoid function is mathematically defined as:\n\n$$\n\\sigma(z) = \\frac{1}{1 + e^{-z}}\n$$\n\n## Example 1\n\n**Input:**\n\n```\nz = 0\n```\n\n**Output:**\n\n```\n0.5000\n```\n\n**Explanation:**\n\nFor $z = 0$, the computation is as follows:\n\n$$\n\\sigma(0) = \\frac{1}{1 + e^{0}} = \\frac{1}{1 + 1} = 0.5\n$$\n\n## Constraints\n\n- The input $z$ is a real number.\n- The output should be rounded to four decimal places.\n\n",
     "inputFormat": "z = 0",
-    "outputFormat": "0.5",
-    "reason": "The sigmoid function is defined as σ(z) = 1 / (1 + exp(-z)). For z = 0, exp(-0) = 1, hence the output is 1 / (1 + 1) = 0.5.",
-    "learnAbout": "Understanding the Sigmoid Activation Function\n\nThe sigmoid activation function is crucial in neural networks, especially for binary classification tasks. It maps any real-valued number into the interval \\( (0, 1) \\), making it useful for modeling probability as an output.\n\n**Mathematical Definition**\n\nThe sigmoid function is mathematically defined as:\n\n$$\n\\sigma(z) = \\frac{1}{1 + e^{-z}}\n$$\n\nwhere \\( z \\) is the input to the function.\n\n**Characteristics**\n\n- **Output Range**: The output is always between 0 and 1.\n- **Shape**: The function has an \"S\" shaped curve.\n- **Gradient**: The gradient is highest near \\( z = 0 \\) and decreases as \\( z \\) moves away from 0 in either direction.\n\nThe sigmoid function is particularly useful for turning logits (raw prediction values) into probabilities in binary classification models."
-  }
-  
+    "outputFormat": "0.5000",
+    "reason": "The sigmoid function is defined as \u03c3(z) = 1 / (1 + exp(-z)). For z = 0, exp(-0) = 1, hence the output is 1 / (1 + 1) = 0.5.",
+    "learnAbout": "# Understanding the Sigmoid Function\n\nThe sigmoid function is a type of activation function commonly used in neural networks, particularly in binary classification problems. It maps any real-valued number into the range (0, 1), which can be interpreted as a probability. The function is defined as:\n\n$$\n\\sigma(z) = \\frac{1}{1 + e^{-z}}\n$$\n\nwhere $e$ is the base of the natural logarithm. The sigmoid function has an S-shaped curve, which is why it is also known as the logistic function. Its derivative is useful for backpropagation in neural networks, as it helps in adjusting the weights during training."
+}
