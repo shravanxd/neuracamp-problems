@@ -1,0 +1,12 @@
+{
+  "title": "probabiility that a card ia an ace",
+  "slug": "probabiility-that-a-card-ia-an-ace",
+  "difficulty": "Easy",
+  "category": "Algorithms",
+  "qtext": "### Problem Description\n\nYou have a shuffled deck of cards, which consists of 52 cards with 4 suits: clubs, diamonds, hearts, and spades. Each suit has the same number of 13 cards: 'A', '2', '3', ..., '10', 'J', 'Q', 'K'. \n\nWrite a function `solution(deck)` that calculates the probability that a randomly drawn card from the given `deck` is an ace.\n\n### Input Format\n- `deck`: a list of strings, where each string represents a card in the format of 'AS' (Ace of Spades), '10H' (Ten of Hearts), etc. (Any order).\n\n### Output Format\n- Return a float representing the probability of drawing an ace from the deck. The result should be rounded to two decimal places.\n\n### Example\n\n```python\nsolution(['AS', '2H', '3D', 'AC'])\n```\n\nOutput:\n```python\n0.5\n```\n\n### Constraints\n- You may assume `deck` contains at least 1 card and at most 52 cards.",
+  "tags": [
+    "probability"
+  ],
+  "companies": [],
+  "acceptance_rate": "100%"
+}
